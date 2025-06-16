@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a4a4a4;
+    padding: 30px;
+}
+
+.container {
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    perspective: 2700px;
+    border-radius: 15px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    display: flex;
+}
+
+section .imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+section.imgBx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 15px 15px 0px;
+}
+
+section .contentBx {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section .contentBx .formBx {
+    width: 80%;
+}
+
+
+section .contentBx .formBx h2 {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+section .contentBx .formBx h5 {
+    font-weight: 500;
+    font-size: 1.0em;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+section .contentBx .formBx .inputBx {
+    margin-bottom: 10px;
+}
+
+section .contentBx .formBx .inputBx label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+section .contentBx .formBx .inputBx input {
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color: #efefef;
+}
+
+section .contentBx .formBx .inputBx input[type="submit"] {
+    background: #000;
+    color: #fff;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+section .contentBx .formBx .inputBx input[type="submit"]:hover {
+    background: #1c1c1c;
+    color: #fff;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    box-shadow: 0px 0px 5px #1c1c1c;
+}
+
+section .contentBx .formBx .inputBx p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+section .contentBx a {
+    color: #DF0D14;
+    font-size: 16px;
+
+}
+
+section .searchBx {
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+section .searchBx input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color: #efefef;
+}
+
+section .searchBx h2 {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+section .searchBx input[type="submit"] {
+    background: #000;
+    color: #fff;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 15px;
+
+}
+
+@media (max-width: 768px) {
+    section .imgBx {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 0%;
+    }
+    section .contentBx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+}
